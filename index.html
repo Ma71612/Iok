@@ -10,10 +10,10 @@
     <nav class="navbar">
         <div class="logo">موقعي</div>
         <ul class="nav-links">
-            <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="about.html">من نحن</a></li>
-            <li><a href="services.html">الخدمات</a></li>
-            <li><a href="contact.html">اتصل بنا</a></li>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -22,11 +22,51 @@
         </div>
     </nav>
 
-    <section class="hero">
+    <section id="home" class="hero">
         <h1>مرحبًا بكم في موقعنا</h1>
         <p>نقدم أفضل الحلول لاحتياجاتكم التقنية</p>
-        <a href="services.html" class="cta-button">استعرض خدماتنا</a>
+        <a href="#services" class="cta-button">استعرض خدماتنا</a>
     </section>
+
+    <section id="about" class="about">
+        <h1>من نحن</h1>
+        <p>نحن فريق من المحترفين نسعى لتقديم حلول تقنية مبتكرة. مهمتنا هي تمكين عملائنا من تحقيق أهدافهم من خلال خدماتنا المميزة.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h1>خدماتنا</h1>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>تطوير المواقع</h3>
+                <p>نصمم مواقع ويب متجاوبة وحديثة.</p>
+            </div>
+            <div class="service-card">
+                <h3>التسويق الرقمي</h3>
+                <p>زيادة تواجدك الرقمي باستراتيجيات فعّالة.</p>
+            </div>
+            <div class="service-card">
+                <h3>الاستشارات التقنية</h3>
+                <p>حلول تقنية مخصصة لاحتياجاتك.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h1>اتصل بنا</h1>
+        <form id="contact-form">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" required>
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" required>
+            <label for="message">الرسالة:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 موقعي. جميع الحقوق محفوظة.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
